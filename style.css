@@ -1,0 +1,79 @@
+@import url('https://fonts.googleapis.com/css2?family=Krona+One&family=Montserrat&display=swap');
+
+
+/* Para resetar os padrões dos navegadores de forma simples utilizamos as propriedades margin, que define a área de margem nos quatro lados do elemento (cima, direita, baixo, esquerda), e padding, que define a área de preenchimento interna nos mesmos quatro lados do elemento, ambas com valor igual à 0.*/
+
+/* O * serve para selecionar todos relacionamento da página*/
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    height: 50vh;
+    box-sizing: border-box;
+    background-color: #000000 ;
+    color: white;
+}
+
+.titulodestaque {
+    color: #22d4fd;
+   
+}
+
+/*o Flex é uma ferramenta do CSS que visa organizar os elementos de uma página HTML de forma dinâmica e mantendo um layout flexível*/
+
+.apresentacao {
+    margin: 17.5%;
+    display: flex;
+    align-items:0;
+    justify-content: space-between;
+}
+
+
+/* gap é o espaçamento, ela especifica no CSS o tamanho dos espaços entre linhas e colunas em layouts de grid, flex e multi-column. Sua sintaxe é bem simples e ela aceita um ou dois valores.*/
+
+.apresentacao__conteudo {
+    width: 575px;    
+    font-family: 'Montserrat', sans-serif;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+
+}
+
+.aprensentacao__conteudo__titulo {
+    font-size: 36px;
+}
+
+.texto {
+    font-size: 24px;
+}
+
+.botoes {
+    display: flex;
+    justify-content: space-between;
+    font-family:#000000 
+}
+
+/* o valor none é responsável por limpar as decorações do elemento âncora, a propriedade border-radius torna as bordas dos links arredondadas. */
+
+.botoes__medidas {
+    background-color: #22d4fd;
+    width: 280px;
+    text-align: center;
+    border-radius: 16px;
+    font-size: 24px;
+    padding: 10px 0; 
+    font-weight: bold;
+    color: #000000
+    
+}
+
+.imagem {
+    text-align: auto;
+    border-radius: 10px;
+    height: 345px; 
+    width: 340px;
+}
