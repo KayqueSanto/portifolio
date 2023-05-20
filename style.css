@@ -54,27 +54,37 @@ body {
 }
 
 .texto {
-    font-size: 24px;
+    font-size: 22px;
+    font-family:'Courier New', Courier, monospace
 }
 
 .botoes {
     display: flex;
+    flex-direction: column;
     justify-content: space-between;
-    font-family:#000000;
+    align-items: center;
+    gap: 18px;
 }
 
 /* o valor none é responsável por limpar as decorações do elemento âncora, a propriedade border-radius torna as bordas dos links arredondadas. */
 
 .botoes__medidas {
-    background-color: #22d4fd;
     width: 280px;
     text-align: center;
-    border-radius: 16px;
-    font-size: 24px;
-    padding: 10px 0; 
+    border-radius: 8px;
+    font-size: 22.5px;
+    padding: 8px 0;
+    text-decoration: none; 
     font-weight: bold;
-    color: #000000;
-    
+    color: #f6f6f6;
+    border: 2px solid #22d4fd;
+    display: flex;
+    justify-content: center;
+    gap: 16px;
+}
+
+.botoes__medidas:hover{
+    background-color: #006c92;
 }
 
 .imagem {
@@ -87,4 +97,10 @@ body {
 
 html {
     height: 100%; 
+}
+
+.h2 {
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif  ;
+    font-weight: 400;
+    font-size: 23px;
 }
