@@ -15,6 +15,11 @@ body {
     box-sizing: border-box;
     background-color: #000000 ;
     color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
 }
 
 .titulodestaque {
@@ -29,6 +34,7 @@ body {
     display: flex;
     align-items:0;
     justify-content: space-between;
+    flex-wrap: wrap-reverse ;
 }
 
 
@@ -40,7 +46,7 @@ body {
     display: flex;
     flex-direction: column;
     gap: 40px;
-
+    margin-right: 35px;
 }
 
 .aprensentacao__conteudo__titulo {
@@ -54,7 +60,7 @@ body {
 .botoes {
     display: flex;
     justify-content: space-between;
-    font-family:#000000 
+    font-family:#000000;
 }
 
 /* o valor none é responsável por limpar as decorações do elemento âncora, a propriedade border-radius torna as bordas dos links arredondadas. */
@@ -67,7 +73,7 @@ body {
     font-size: 24px;
     padding: 10px 0; 
     font-weight: bold;
-    color: #000000
+    color: #000000;
     
 }
 
@@ -77,4 +83,8 @@ body {
     height: 345px; 
     width: 340px;
     object-fit: cover; 
+}
+
+html {
+    height: 100%; 
 }
