@@ -34,6 +34,7 @@ body {
     align-items:center;
     justify-content: center;
     flex-wrap: wrap-reverse ;
+    gap: 82px;
 }
 
 .apresentacao__conteudo {
@@ -109,8 +110,14 @@ html {
     font-size: small;
 }
 
+.desenvolvedor__texto {
+    text-decoration: underline wavy red;
+    color: var(--cor-secundaria);
+
+}
+
 .cabecalho {
-   padding: 2% 6% 0% 17% ;
+   padding: 2% 6% 0% 14% ;
   
 }
 
